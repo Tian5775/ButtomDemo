@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+    <div id="app">
+        <div class="Box" >
+            <div class="firstBox">
+                <span-button v-bind:is-Close="{name:'firstIsClose',value:firstIsClose}"></span-button>
+                <div>
+                    <new-button v-for="site in firstButtonData" v-bind:button-data="site" v-bind:level="1"></new-button>
+                </div>
+            </div>
+            <div class="secondBox">
+                <span-button v-bind:is-Close="{name:'secondIsClose',value:secondIsClose}"></span-button>
+                <div v-show="!secondIsClose">
+                    <new-button v-for="site in secondButtonData"  v-bind:button-data="site" v-bind:level="2"></new-button>
+                </div>
+            </div>
+            <div class="thirdBox">
+                <span-button v-bind:is-Close="{name:'thirdIsClose',value:thirdIsClose}"></span-button>
+                <div v-show="!thirdIsClose">
+                    <new-button v-for="site in thirdButtonData"  v-bind:button-data="site" v-bind:level="3"></new-button>
+                </div>
+            </div>
+        </div>
+        <!--<button v-on:click="test">test</button>-->
+    </div>
+
+    <script typr="text/javascript" src="data.js"></script>
+    <script typr="text/javascript" src="main.js"></script>
+</body>
+</html>

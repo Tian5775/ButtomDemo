@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.open{
+    display: inline-block;
+    position: absolute;
+    left:100px;
+    background: url("image/open.png") no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.close{
+    background: url("image/close.png") no-repeat;
+    background-size: 25px;
+}
+
+button{
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    padding: 0 5px;
+    height: 30px;
+    border: 1px #000 dashed;
+    background: #fff;
+}
+
+/*初始状态*/
+.button-default{
+}
+
+/*选中当前选项*/
+.button-checked {
+    background: url("image/checked.png") no-repeat #fff;
+    background-position-x: 100%;
+    background-position-y: 8px;
+}
+
+/*选中且展开*/
+.button-open {
+    background-color: #EEEEEE;
+}
+
+/*选中子节点*/
+.button-checkChild{
+    border: 1px #000000 solid;
+}
+
+/*展开子节点*/
+.button-checkChild{
+    border-style: solid;
+}
+
+.Box{
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px gray solid;
+    padding:5px;
+}
+
+.Box > div {
+    min-height: 26px;
+}
+
+.firstBox > div{
+    background: #E7E5E2;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+.firstBox > span {
+    left: 90px;
+}
+
+.secondBox > div{
+    background: #E7E5E2;
+    margin-bottom: 5px;
+    margin-left: 140px;
+}
+.secondBox > span {
+    left: 130px;
+}
+
+.thirdBox > div{
+    background: #E7E5E2;
+    margin-bottom: 5px;
+    margin-left: 180px;
+}
+.thirdBox > span {
+    left: 170px;
+}
